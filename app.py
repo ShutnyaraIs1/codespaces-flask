@@ -41,7 +41,7 @@ def upload_news():
     file = request.files['file']
     password = request.form['password']
 
-    if password != '11072007':
+    if password != '**11072007**':
         flash('Неверный пароль')
         return redirect(url_for('upload'))
 
