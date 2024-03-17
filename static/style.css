@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -17,28 +15,30 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.news-item {
+.news-card {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 20px;
     padding: 20px;
+    width: calc(33.333% - 13.333px);
 }
 
-.news-item h2 {
+.news-card h2 {
     color: #333;
 }
 
-.news-item .date {
+.news-card .date {
     color: #777;
 }
 
-.news-item .content {
+.news-card .content {
     margin-top: 10px;
     color: #555;
 }
